@@ -17,9 +17,9 @@ const Home = () => {
       <div className="relative container mx-auto md:px-0">
         <div className="flex flex-col md:flex-row-reverse items-center md:space-x-20 z-10">
           <div className="w-full md:w-1/2">
-            <Image src={appImage} width={900} height={1950} className="md:-ml-52 md:min-w-max max-w-none" alt="Nosh Diary App" />
+            <Image src={appImage} width={900} height={1950} className="md:-ml-52 md:min-w-max md:max-w-none" alt="Nosh Diary App" />
           </div>
-          <div className="flex flex-col items-center md:items-start md:w-1/2 mt-10 md:mt-0 ">
+          <div className="flex flex-col items-center md:items-start md:w-1/2 md:mt-10 md:mt-0 ">
             <div className="text-5xl md:text-7xl text-center md:text-left font-bold mb-6">
                 {TAGLINE}
             </div>
