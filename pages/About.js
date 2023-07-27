@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from './Layout';
+import Layout from '../src/Layout';
 
 const About = () => {
   return (
@@ -29,13 +29,6 @@ const About = () => {
               <p className="text-base">{"We are committed to transparency in everything we do. We provide clear, evidence-based information and strive to demystify the complexities of nutrition. Our aim is to empower you with knowledge, enabling you to make informed choices about your health."}</p>
             </li>
           </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">{"Join Us"}</h2>
-          <p className="text-lg">
-            {"Are you ready to embark on a journey towards optimal health? Join our vibrant community of health enthusiasts and be a part of the Nosh Diary movement. As a member, you'll gain exclusive access to our open beta program, where you can actively contribute to the evolution of our app and shape the future of personalized nutrition. Together, we can unlock the full potential of AI in the realm of nourishment. Join us today and revolutionize the way you nourish your body and mind."}
-          </p>
         </section>
       </div>
     </Layout>
