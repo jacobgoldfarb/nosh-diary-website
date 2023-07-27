@@ -10,9 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        'tagline': '5rem',  // adjust the value to get the desired size
-      },
+      // fontSize: {
+      //   'tagline': '5rem',  // adjust the value to get the desired size
+      // },
     },
   },
   plugins: [],

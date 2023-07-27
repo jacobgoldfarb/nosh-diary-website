@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         className="absolute top-0 left-0 w-full h-2/5 transform -rotate-6 origin-bottom-left scale-150 bg-gradient-to-r from-teal-400 via-purple-500 to-blue-600 z-0"
       />
       <Navbar />
-      <main className="mt-10 ml-20 flex flex-col items-center flex-grow relative z-10">
+      <main className="mt-10 mx-10 md:ml-20 flex flex-col items-center flex-grow relative z-10">
         <animated.div style={props}>{children}</animated.div>
       </main>
       <Footer />

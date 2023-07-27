@@ -1,11 +1,26 @@
 import React from 'react';
-import Layout from '../src/Layout';
+import Layout from '../components/Layout';
 
 const About = () => {
+
+  const valuesList = [
+    {
+      title: "Innovation",
+      description: "We are driven by a passion for innovation, constantly pushing boundaries and exploring new frontiers in the field of nutrition. We believe that technology has the potential to unlock remarkable insights and transform the way we nourish our bodies."
+    },
+    {
+      title: "Personalization",
+      description: "We recognize that each individual has unique nutritional requirements. Our approach is rooted in personalization, ensuring that you receive tailored recommendations based on your specific needs, goals, and preferences. No two bodies are the same, and neither should be their nutrition plans."
+    },
+    {
+      title: "Transparency",
+      description: "We are committed to transparency in everything we do. We provide clear, evidence-based information and strive to demystify the complexities of nutrition. Our aim is to empower you with knowledge, enabling you to make informed choices about your health."
+    }
+  ];
+
   return (
     <Layout>
-      <div className="container mx-auto py-10">
-        {/* <h1 className="text-4xl font-bold mb-6">{"About Nosh Diary"}</h1> */}
+      <div className="container mx-auto py-10 pr-10">
         <section className="mb-8">
           <h2 className="text-5xl font-bold mb-4">{"Company Overview"}</h2>
           <p className="text-lg">
@@ -16,18 +31,12 @@ const About = () => {
         <section className="mb-8">
           <h2 className="text-5xl font-bold mb-4">{"Values"}</h2>
           <ul>
-            <li className="mb-4">
-              <h3 className="text-2xl font-semibold">{"Innovation"}</h3>
-              <p className="text-base">{"We are driven by a passion for innovation, constantly pushing boundaries and exploring new frontiers in the field of nutrition. We believe that technology has the potential to unlock remarkable insights and transform the way we nourish our bodies."}</p>
-            </li>
-            <li className="mb-4">
-              <h3 className="text-2xl font-semibold">{"Personalization"}</h3>
-              <p className="text-base">{"We recognize that each individual has unique nutritional requirements. Our approach is rooted in personalization, ensuring that you receive tailored recommendations based on your specific needs, goals, and preferences. No two bodies are the same, and neither should be their nutrition plans."}</p>
-            </li>
-            <li className="mb-4">
-              <h3 className="text-2xl font-semibold">{"Transparency"}</h3>
-              <p className="text-base">{"We are committed to transparency in everything we do. We provide clear, evidence-based information and strive to demystify the complexities of nutrition. Our aim is to empower you with knowledge, enabling you to make informed choices about your health."}</p>
-            </li>
+            {valuesList.map((value, index) => (
+              <li key={index} className="mb-4">
+                <h3 className="text-2xl font-semibold">{value.title}</h3>
+                <p className="text-base">{value.description}</p>
+              </li>
+            ))}
           </ul>
         </section>
       </div>

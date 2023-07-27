@@ -1,17 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
-import Layout from '../src/Layout';
+import Layout from '../components/Layout';
 import Image from 'next/image';
-import appImage from '../public/nosh-diary-mockup.png';
+import appImage from '../public/nosh-diary-mockup-clay.png';
 import appStoreIcon from '../public/download_on_app_store.svg'; // import the SVG
 
 const Home = () => {
   return (
     <Layout>
-      <div className="container px-4 mx-auto md:px-0">
+      <div className="container mx-auto md:px-0">
         <div className="flex flex-col-reverse md:flex-row items-center md:space-x-10">
           <div className="flex flex-col items-center md:items-start md:w-1/2">
-            <div className="text-4xl md:text-tagline text-8xl text-center md:text-left font-bold mb-6">
+            <div className="text-5xl md:text-7xl text-center md:text-left font-bold mb-6">
                 Your health odyssey begins today. Try Nosh for free.
             </div>
             <p className="text-lg md:text-xl mb-6 text-center md:text-left">
@@ -21,8 +21,8 @@ const Home = () => {
               <Image src={appStoreIcon} alt="Download on App Store" width={140} height={42} /> {/* Render the SVG */}
             </Link>
           </div>
-          <div className="-mt-8 md:mt-0 w-full md:w-1/2">
-            <Image src={appImage} alt="Nosh Diary App" width={800} height={342}  />
+          <div className="my-10 md:my-0 w-full md:w-4/5 mx-auto"> {/* Adjust parent container's width */}
+            <Image src={appImage} alt="Nosh Diary App"  />
           </div>
         </div>
       </div>
