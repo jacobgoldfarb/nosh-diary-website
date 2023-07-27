@@ -8,9 +8,12 @@ import appStoreIcon from '../public/download_on_app_store.svg'; // import the SV
 const Home = () => {
   return (
     <Layout>
-      <div className="container mx-auto md:px-0">
-        <div className="flex flex-col-reverse md:flex-row items-center md:space-x-10">
-          <div className="flex flex-col items-center md:items-start md:w-1/2">
+      <div className="relative container mx-auto md:px-0">
+        <div className="flex flex-col md:flex-row-reverse items-center md:space-x-10 z-10">
+          <div className="w-full md:w-2/3">
+            <Image src={appImage} alt="Nosh Diary App" />
+          </div>
+          <div className="flex flex-col items-center md:items-start md:w-1/2 mt-10 md:mt-0">
             <div className="text-5xl md:text-7xl text-center md:text-left font-bold mb-6">
                 Your health odyssey begins today. Try Nosh for free.
             </div>
@@ -20,9 +23,6 @@ const Home = () => {
             <Link href={'https://www.apple.com/app-store/'}>
               <Image src={appStoreIcon} alt="Download on App Store" width={140} height={42} /> {/* Render the SVG */}
             </Link>
-          </div>
-          <div className="my-10 md:my-0 w-full md:w-4/5 mx-auto"> {/* Adjust parent container's width */}
-            <Image src={appImage} alt="Nosh Diary App"  />
           </div>
         </div>
       </div>
