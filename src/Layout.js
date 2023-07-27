@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { useSpring, animated } from 'react-spring';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
   const props = useSpring({
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
       <main className="mt-10 ml-20 flex flex-col items-center flex-grow relative z-10">
         <animated.div style={props}>{children}</animated.div>
       </main>
+      <Footer />
     </div>
   );
 };
