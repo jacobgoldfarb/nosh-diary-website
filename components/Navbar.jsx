@@ -12,10 +12,10 @@ const Navbar = () => {
 
   return (
     <nav className="px-10 py-4 z-20">
-      <ul className="flex items-center space-x-4 text-xl">
+      <ul className="flex items-center space-x-4 text-md md:text-xl">
         <div className="ml-30 rounded-lg w-100">
           <Link href={'/'}>
-            <Image src={logoImage} alt="NoshDiary" width={300} height={200}/>
+            <Image src={logoImage} className="min-w-60" alt="NoshDiary" width={300} height={200}/>
           </Link>
         </div>
         <div className="flex">
