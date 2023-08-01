@@ -14,7 +14,7 @@ const Layout = ({ children, title, description, keywords }) => {
   return (
     <div className="flex flex-col min-h-screen relative overflow-hidden">
       <Head>
-        <title>{"NoshDiary | " + title}</title>
+        <title>{`NoshDiary | ${title}`}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Head>
