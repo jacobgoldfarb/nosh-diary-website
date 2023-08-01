@@ -13,7 +13,11 @@ const APP_STORE_ALT = 'Download on App Store';
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout
+      title={TAGLINE} 
+      description={APP_DESCRIPTION} 
+      keywords="nutrition, health, diet, AI, goals"
+    >
       <div className="relative container mx-auto md:px-0">
         <div className="flex flex-col md:flex-row-reverse items-center md:space-x-20 z-10">
           <div className="w-full md:w-1/2">
@@ -26,8 +30,10 @@ const Home = () => {
             <p className="text-lg md:text-xl mb-6 text-center md:text-left">
               {APP_DESCRIPTION}
             </p>
-            <Link href={APP_STORE_URL}>
-              <Image src={appStoreIcon} alt={APP_STORE_ALT} width={140} height={42} />
+            <Link href={APP_STORE_URL} legacyBehavior>
+              <a aria-label={APP_STORE_ALT}>
+                <Image src={appStoreIcon} alt={APP_STORE_ALT} width={140} height={42} />
+              </a>
             </Link>
           </div>
         </div>

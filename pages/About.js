@@ -19,7 +19,11 @@ const About = () => {
   ];
 
   return (
-    <Layout>
+    <Layout
+      title="About Us - Nosh Diary" 
+      description="Learn more about Nosh Diary, our mission, and the values that drive us. We're revolutionizing the way people approach nutrition and wellness." 
+      keywords="Nosh Diary, About Us, Company Information, Nutrition, Wellness"
+    >
       <div className="container mx-auto py-10 pr-10">
         <section className="mb-8">
           <h2 className="text-5xl font-bold mb-4">{"Company Overview"}</h2>
