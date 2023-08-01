@@ -7,7 +7,7 @@ import logoImage from '../public/nosh-diary-white-logo-white.png';
 const Navbar = () => {
   const navbarItems = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
+    { name: 'About', path: '/about-us' },
   ];
 
   return (
