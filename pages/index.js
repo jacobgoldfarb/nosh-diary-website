@@ -6,8 +6,8 @@ import appImage from '../public/nosh-diary-mockup-clay.png';
 import appStoreIcon from '../public/download_on_app_store.svg'; 
 
 // Text constants
-const TAGLINE = 'Your health odyssey begins today. Try Nosh for free.';
-const APP_DESCRIPTION = `With Nosh you can easily keep an eye on what you eat. Just dictate what you eat or jot it down - it's as simple as that. The app will track your macros and use AI to give you insights based on your diet and health goals. It's a practical, user-friendly tool that helps you manage your nutrition effectively. No fuss, just you moving closer to your health goals, one day at a time.`;
+const TAGLINE = 'Discover Instant Health Boosts.';
+const APP_DESCRIPTION = `Nosh Diary will keep an eye on what you eat and generate insights. Just speak to it and tell it what you've eaten or jot it down - it's as simple as that.`;
 const APP_STORE_URL = 'https://www.apple.com/app-store/';
 const APP_STORE_ALT = 'Download on App Store';
 
