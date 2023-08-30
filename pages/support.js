@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-SUPPORT_COPY = "Have a question? Get in touch with us at Nosh Diary. We're here to help. Email us at help@noshdiary.com and expect a response as soon as possible."
+const SUPPORT_COPY = "Have a question? Get in touch with us at Nosh Diary. We're here to help. Email us at help@noshdiary.com and expect a response as soon as possible."
 
 const Support = () => {
   return (
