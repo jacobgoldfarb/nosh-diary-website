@@ -2,13 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import Image from 'next/image';
-import appImage from '../public/nosh-diary-mockup-clay.png';
+import appImage from '../public/dual-mockups.png';
 import appStoreIcon from '../public/download_on_app_store.svg'; 
 
 // Text constants
 const TAGLINE = 'Discover Instant Health Boosts.';
 const APP_DESCRIPTION = `Nosh Diary will keep an eye on what you eat and generate insights. Just speak to it and tell it what you've eaten or jot it down - it's as simple as that.`;
-const APP_STORE_URL = 'https://www.apple.com/app-store/';
+const APP_STORE_URL = 'https://apps.apple.com/us/app/nosh-diary/id6448931123';
 const APP_STORE_ALT = 'Download on App Store';
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
       <div className="relative container mx-auto md:px-0">
         <div className="flex flex-col md:flex-row-reverse items-center md:space-x-20 z-10">
           <div className="w-full md:w-1/2">
-            <Image src={appImage} width={900} height={1950} className="md:-ml-52 md:min-w-max md:max-w-none" alt="Nosh Diary App" />
+            <Image src={appImage} width={900} height={1950} className="md:-ml-20 md:min-w-max md:max-w-none" alt="Nosh Diary App" />
           </div>
           <div className="flex flex-col items-center md:items-start md:w-1/2 md:mt-10 md:mt-0 ">
             <div className="text-5xl md:text-7xl text-center md:text-left font-bold mb-6">
